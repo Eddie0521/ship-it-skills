@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+plugins/*/skills/*/evals/results/
+*.skill
+.DS_Store
+plugins/*/skills/*/evals/
