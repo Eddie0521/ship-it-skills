@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: new-project-node-skeleton
+expected_outcome: |
+  ledger-cli 里搭好可运行的 Node 项目骨架：npm test 能跑通，有在 push/PR 上跑测试的 CI，
+  有 PR 模板和 .gitignore；回复里给出 main 分支保护的设置步骤和第一批 issue 建议；
+  没有未经确认就建远程仓库或推送。

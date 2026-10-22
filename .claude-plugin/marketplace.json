@@ -1,0 +1,14 @@
+{
+  "name": "ship-it-skills",
+  "description": "GitHub issue/PR 工作流技能集",
+  "owner": {
+    "name": "Eddie0521"
+  },
+  "plugins": [
+    {
+      "name": "ship-it",
+      "source": "./plugins/ship-it",
+      "description": "规划 → issue → PR → CI → 合并：入口 + 5 个子技能"
+    }
+  ]
+}

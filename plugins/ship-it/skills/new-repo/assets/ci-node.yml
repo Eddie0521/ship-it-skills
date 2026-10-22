@@ -1,0 +1,21 @@
+# CI：每次推送和 PR 都在干净机器上装依赖、跑检查。
+# 把 node-version 改成项目实际要求的版本；没有 lint 就删掉那一步。
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm            # 用 pnpm / yarn 就改成对应的值，并加上安装它的步骤
+      - run: npm ci
+      - run: npm run lint --if-present
+      - run: npm test
