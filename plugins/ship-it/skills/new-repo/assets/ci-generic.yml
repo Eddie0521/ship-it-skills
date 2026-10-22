@@ -1,0 +1,18 @@
+# CI 通用骨架：把「装依赖」和「跑测试」两步换成项目实际的命令。
+# 有 Makefile 的项目，最省事的是让 CI 只跑 make test / make lint，和本地保持一致。
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 装依赖
+        run: echo "TODO：替换成安装命令" && exit 1
+      - name: 跑测试
+        run: echo "TODO：替换成测试命令" && exit 1

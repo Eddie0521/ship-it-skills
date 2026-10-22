@@ -1,0 +1,5 @@
+{
+  "name": "ship-it",
+  "description": "用 issue → 分支 → PR → CI → 评审 → 合并推进软件工作：入口技能判断在哪一步，5 个子技能分别负责新项目骨架、规划拆 issue、交付 PR、跟进 PR、交接验收。",
+  "version": "0.1.0"
+}
